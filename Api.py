@@ -21,7 +21,7 @@ def get_response(term = "any:AS186"):
 
     response = requests.get("https://api.element14.com/catalog/products?", parameters)
 
-    return response
+    return response.json()
 
 
 # x = response.json()
